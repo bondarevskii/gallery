@@ -1,0 +1,76 @@
+.viewForm {
+	position: fixed;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+	width: 100vw;
+	height: 100vh;
+}
+
+.viewForm__bg {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 2;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.viewForm__img {
+	position: fixed;
+	z-index: 3;
+}
+
+.viewForm__buttonPrevious {
+	position: fixed;
+	z-index: 4;
+	left: 10px;
+	top: calc(50% - 0.5em);
+	font-size: 3em;
+	color: white;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.viewForm__buttonNext {
+	position: fixed;
+	z-index: 4;
+	right: 10px;
+	top: calc(50% - 0.5em);
+	font-size: 3em;
+	color: white;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.viewForm__buttonExit {
+	position: fixed;
+	z-index: 5;
+	right: 10px;
+	top: 10px;
+	font-size: 3em;
+	color: white;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-aspect-ratio: 1/1) {
+	.viewForm__img {
+		position: fixed;
+		left: calc(50vw - 50vh);
+		width: 100vh;
+		height: 100vh;
+		z-index: 3;
+	}
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+	.viewForm__img {
+		position: fixed;
+		top: calc(50vh - 50vw);
+		width: 100vw;
+		height: 100vw;
+		z-index: 3;
+	}
+}
